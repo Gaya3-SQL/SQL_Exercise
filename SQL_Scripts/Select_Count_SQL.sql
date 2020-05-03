@@ -1,4 +1,4 @@
---This query uses count function to find count of rows in a table--
+--//This query uses count function to find count of rows in a table**--
 
 Select Count(*) from Sales.Customer
 
