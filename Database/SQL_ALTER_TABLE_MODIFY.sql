@@ -1,0 +1,3 @@
+ALTER TABLE Persons
+
+MODIFY COLUMN PersonID;
