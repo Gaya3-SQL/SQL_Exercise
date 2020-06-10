@@ -1,0 +1,14 @@
+
+--Get me the consolidate list of first name and last name from two tables. 
+--( where one table should belong to adventure works and another table to adventure works DW )
+
+
+Select FirstName,LastName from dbo.DimCustomer
+UNION ALL
+Select FirstName,LastName from AdventureWorks2017.Person.Person
+
+
+Select FirstName,LastName from dbo.DimCustomer
+UNION 
+Select FirstName,LastName from AdventureWorks2017.Person.Person
+
