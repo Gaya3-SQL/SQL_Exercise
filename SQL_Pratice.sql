@@ -1,14 +1,14 @@
-Select * from HumanResources.EmployeeDepartmentHistory
-Where DepartmentID>4;
+Select * from production.stocks
 
-Select * from HumanResources.EmployeeDepartmentHistory
-Where EndDate IS NULL;
+Select Sum(quantity) AS QUA,store_id from production.stocks
+Group by store_id
 
-Select * from HumanResources.EmployeeDepartmentHistory
-Where EndDate IS NOT NULL;
+Select AVG(list_price)  as list,item_id,product_id from sales.order_items
+group by item_id,product_id
+HAVING item_id>4;
 
-Select Count(ShiftID) AS COUNT,DepartmentID,ShiftID from HumanResources.EmployeeDepartmentHistory
-Group by DepartmentID,ShiftID
+Select * from production.products
+Where product_name LIKE '%Surly%';
 
-Select * from HumanResources.EmployeeDepartmentHistory
-Where DepartmentID<>4;
+Select * from production.products
+Where product_name LIKE '%_u_%';
