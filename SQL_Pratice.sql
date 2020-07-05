@@ -1,14 +1,15 @@
-Select * from production.stocks
+Select * from dbo.DimAccount
+Where AccountCodeAlternateKey=110;
 
-Select Sum(quantity) AS QUA,store_id from production.stocks
-Group by store_id
+Select * from dbo.DimAccount
+Where AccountType IS NULL;
 
-Select AVG(list_price)  as list,item_id,product_id from sales.order_items
-group by item_id,product_id
-HAVING item_id>4;
+Select * from dbo.DimAccount
+Order by ParentAccountCodeAlternateKey asc;
 
-Select * from production.products
-Where product_name LIKE '%Surly%';
+Select * from dbo.DimAccount
+Where AccountDescription like '%Ass%';
 
-Select * from production.products
-Where product_name LIKE '%_u_%';
+Select * from dbo.DimAccount
+Where ValueType Like '%urr%';
+
