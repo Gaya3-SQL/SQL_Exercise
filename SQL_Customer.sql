@@ -1,0 +1,17 @@
+Create Table dbo.Customer (
+[CustomerID] [INT] PRIMARY KEY NOT NULL,
+[FirstName] [varchar](25) NOT NULL,
+[LastName] [varchar](25) NULL,
+[MiddleName] [varchar](25) NULL,
+[AddressLine1]  [varchar](25) NULL,
+[State] [varchar](25) NULL,
+[Country] [varchar](25) NULL,
+[SaleDate] [DateTime] Null,
+[ProductName] [varchar](25) NULL,
+[ListPrize] [Int] Null,
+[DelivaryDate] [DateTime] Null,
+[BirthDate] [date] NULL,
+[Gender] [varchar](5) NULL,
+[PhoneNumber] [int] NULL,
+[EmergencyNumber] [int] NULL,
+[LoadDate] [DATETIME] DEFAULT GETDATE());
