@@ -1,0 +1,17 @@
+CREATE TABLE Employee.TechnologyTeam (
+[TechnologyTeamID] [INT] PRIMARY KEY NOT NULL,
+[EmployeeID] [int] FOREIGN KEY REFERENCES EmployeeData(EmployeeID),
+[DepartmentID] [INT] NULL,
+[DepartmentName] [varchar](25) NULL,
+[ISJunior] [varchar](25) NULL,
+[ISSenior] [varchar](25) NULL,
+[ISTeamLeader] [varchar](25) NULL,
+[ISTechnicalTeam] [varchar](25) NULL,
+[ISHR] [varchar](25) NULL,
+[ISSeniorHR] [varchar](25) NULL,
+[ISManager] [varchar](25) NULL,
+[Service] [Varchar] (25) Null,
+[Qualification] [Varchar] (50) Null,
+[BirthDate] [date] NULL,
+[Gender] [varchar](5) NULL,
+[LoadDate] [Datetime] DEFAULT GETDATE());
