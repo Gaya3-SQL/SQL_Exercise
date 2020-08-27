@@ -1,5 +1,4 @@
 
-Drop table #ExcelData
 
 Select *  
 INTO #ExcelData
@@ -25,5 +24,7 @@ select 'ABC 6' AS Name,'LONDO'	AS Address ,108 AS TRANSACTIONNumber,500  AS Amou
 UNION ALL
 select 'ABC 7' AS Name,'UK'	AS Address ,109 AS TRANSACTIONNumber,600  AS Amount	
 UNION ALL
-select 'ABC 8' AS Name,'SPAIN'	AS Address ,110 AS TRANSACTIONNumber,700  AS Amount		) AS A
+select 'ABC 8' AS Name,'SPAIN'	AS Address ,110 AS TRANSACTIONNumber,700  AS Amount) AS A
 
+
+SELECT *,CONCAT(Name,',',Address,',',TRANSACTIONNumber,',',Amount) AS CC FROM #ExcelData
