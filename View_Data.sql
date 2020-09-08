@@ -1,0 +1,1 @@
+Select * from dbo.Dim_E
