@@ -1,15 +1,12 @@
-Create Procedure dbo.AccountK
-
-As
+CREATE PROCEDURE dbo.Territory
+(
+@AlternateKey [Int]
+)
+AS
 
 Begin
 
-Declare @AccountK [int]
-
-Set @AccountK=15
-
-
-Select * from dbo.DimAccount
-Where AccountKey= @AccountK
+Select * from dbo.DimSalesTerritory
+Where SalesTerritoryAlternateKey=@AlternateKey
 
 End
